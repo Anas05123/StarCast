@@ -46,10 +46,10 @@ client.on("message", async message => {
                                             let bc = new Discord.RichEmbed()
                                             .setColor("RANDOM")
                                             .setThumbnail(message.author.avatarURL)
-                                            .setTitle("Broadcast")
-                                            .addField("Server", message.guild.name)
-                                            .addField("Sender", message.author.username)
-                                            .addField("Message", args);
+                                            .setTitle(">>برودكاست")
+                                            .addField(">>السيرفر", message.guild.name)
+                                            .addField(">>المرسل", message.author.username)
+                                            .addField(">>الرسالة", args);
 
                                             member.sendEmbed(bc);
                                         });
@@ -88,7 +88,7 @@ client.on("message", async message => {
                                             .setTitle(">>برودكاست")
                                             .addField(">>السيرفر", message.guild.name)
                                             .addField(">>المرسل", message.author.username)
-                                            .addField("الرسالة", args);
+                                            .addField(">>الرسالة", args);
 
                                             member.sendEmbed(bco);
                                         });
